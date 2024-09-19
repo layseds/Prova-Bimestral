@@ -1,0 +1,171 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffdddd;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffabab;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Formulário de Busca */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botões */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#botaoAumentarFonte, #botaoDiminuirFonte, #botaoContraste {
+    background-color: #333; /* Cor de fundo dos botões */
+    color: #E0E0E0; /* Cor do texto dos botões */
+}
+
+/* Layout de Colunas */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+article {
+    flex: 2;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+    margin-left: 20px; /* Adiciona um pouco de espaço à esquerda da coluna de destaques */
+}
+
+/* Estilo das Notícias */
+.noticia {
+    margin-bottom: 30px; /* Espaçamento entre as notícias */
+    padding: 15px;
+    background-color: #f9f9f9; /* Cor de fundo */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilo para o autor em itálico */
+.autor {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Seção de Contato */
+#contato {
+    background-color: #fff;
+    padding: 20px;
+    margin: 40px 0;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#contato h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#contato p {
+    margin-bottom: 10px;
+}
+
+.instagram-link {
+    color: #e1306c; /* Cor do logo do Instagram */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.instagram-link:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffabab;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos para contraste alto */
+.contraste-alto {
+    background-color: #121212; /* Fundo escuro */
+    color: #E0E0E0; /* Texto claro */
+}
+
+.contraste-alto header {
+    background-color: #1E1E1E; /* Cabeçalho escuro */
+}
+
+.contraste-alto .noticia {
+    background-color: #1E1E1E; /* Fundo das notícias escuro */
+    color: #E0E0E0; /* Texto das notícias claro */
+}
+
+.contraste-alto footer {
+    background-color: #1E1E1E; /* Rodapé escuro */
+}
+
+.contraste-alto .instagram-link {
+    color: #1E90FF; /* Cor dos links para um contraste vibrante */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
